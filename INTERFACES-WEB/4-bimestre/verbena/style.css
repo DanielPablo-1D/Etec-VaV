@@ -1,0 +1,669 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff5f8;
+}
+
+.navbar {
+    background-color: #e8a0bf;
+    position: relative;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link,
+.botao-inicio,
+.botao-banner-comprar,
+.flor-card,
+.flor-card img,
+.produto-rosa,
+.produto-rosa img,
+.botao-comprar-rosa {
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #6d304b;
+}
+
+.navbar .navbar-toggler {
+    border-color: white;
+}
+
+.navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.logo-navbar {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.inicio {
+    min-height: 420px;
+    background: linear-gradient(to right, rgba(0,0,0,.65), rgba(0,0,0,.1)), url("imagens/flores.png") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 60px 6%;
+}
+
+.conteudo-inicio {
+    padding: 20px 0;
+}
+
+.conteudo-inicio h1 {
+    font-size: 42px;
+    font-weight: bold;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+.conteudo-inicio p {
+    font-size: 18px;
+    max-width: 500px;
+    margin: 20px 0 25px;
+    line-height: 1.6;
+}
+
+.botao-inicio {
+    display: inline-block;
+    background-color: white;
+    color: #333;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-inicio:hover {
+    background-color: #e8a0bf;
+    color: white;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+    padding: 20px 15px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 140px;
+    min-height: 110px;
+    padding: 10px 5px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.categoria img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.categoria span {
+    font-size: 15px;
+}
+
+.categoria:hover {
+    background-color: #fff0f6;
+    color: #c45b88;
+    transform: translateY(-3px);
+}
+
+.sobre {
+    background-color: #f4cddd;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #c45b88;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #e8a0bf;
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.perguntas {
+    background-color: #fff5f8;
+    padding: 45px 8%;
+}
+
+.perguntas h2 {
+    color: #c45b88;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.perguntas .accordion {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.perguntas .accordion-item,
+.acordeao-flores .accordion-item {
+    border: 1px solid #f0c4d5;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.perguntas .accordion-button,
+.acordeao-flores .accordion-button {
+    font-weight: bold;
+    color: #63364a;
+    background-color: white;
+}
+
+.perguntas .accordion-button:not(.collapsed),
+.acordeao-flores .accordion-button:not(.collapsed) {
+    background-color: #f8dce8;
+    color: #8d3d61;
+    box-shadow: none;
+}
+
+.perguntas .accordion-button:focus,
+.acordeao-flores .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(232,160,191,.3);
+}
+
+.perguntas .accordion-body,
+.acordeao-flores .accordion-body {
+    background-color: white;
+    color: #444;
+    line-height: 1.6;
+}
+
+.acordeao-flores .accordion-button {
+    font-size: 15px;
+}
+
+.acordeao-flores .accordion-body {
+    font-size: 14px;
+}
+
+.titulo-comprar {
+    color: #c45b88;
+    background-color: white;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 20px 22px 30px auto;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+.banner-comprar {
+    min-height: 460px;
+    background: linear-gradient(to left, rgba(35,15,40,.82), rgba(35,15,40,.05)), url("imagens/fundotitulo.png") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 60px 8%;
+    color: white;
+}
+
+.conteudo-banner-comprar {
+    max-width: 520px;
+    text-align: right;
+}
+
+.conteudo-banner-comprar h1 {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.conteudo-banner-comprar p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.botao-banner-comprar {
+    display: inline-block;
+    background-color: white;
+    color: #222;
+    padding: 14px 28px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao-banner-comprar:hover {
+    background-color: #f1e2f3;
+    border-color: #f1e2f3;
+    color: #222;
+}
+
+.secao-compras {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.cabecalho-compras {
+    text-align: center;
+    padding: 20px 15px 30px;
+    background-color: white;
+}
+
+.cabecalho-compras h2 {
+    color: #7b3f83;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.lista-flores {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    padding: 25px;
+    background: url("imagens/fundocomprar.png") center / cover no-repeat;
+    border-radius: 15px;
+    margin: 0 22px 30px;
+}
+
+.flor-item {
+    min-width: 0;
+}
+
+.flor-card {
+    display: block;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    text-decoration: none;
+    color: #292929;
+    position: relative;
+    z-index: 1;
+}
+
+.flor-card:hover {
+    transform: translateY(-4px);
+    background-color: #fce0eb;
+    color: #d63384;
+    box-shadow: 0 6px 16px rgba(232,160,191,.3);
+}
+
+.flor-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.flor-card:hover img,
+.produto-rosa:hover img {
+    background-color: #fce0eb;
+}
+
+.flor-card h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 16px;
+}
+
+.acordeao-flores {
+    margin-top: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-florecer {
+    background-color: white;
+    margin: 0;
+    padding: 25px 22px 40px;
+    text-align: center;
+}
+
+.banner-florecer img {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.produto-rosa {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    height: 100%;
+}
+
+.produto-rosa:hover {
+    background-color: #fce0eb;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(232,160,191,.3);
+}
+
+.produto-rosa img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.detalhes-rosa {
+    padding: 18px;
+}
+
+.detalhes-rosa h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.detalhes-rosa p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.preco-rosa {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao-comprar-rosa {
+    display: block;
+    background-color: #198754;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.botao-comprar-rosa:hover {
+    background-color: #146c43;
+    color: white;
+}
+
+@media (max-width: 1100px) {
+    .lista-flores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .lista-flores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        padding: 15px;
+        margin: 0 15px 25px;
+    }
+
+    .flor-card img {
+        height: 190px;
+    }
+
+    .titulo-comprar {
+        font-size: 27px;
+        margin-left: 15px;
+    }
+
+    .produto-rosa img {
+        height: 180px;
+    }
+
+    .detalhes-rosa {
+        padding: 12px;
+    }
+
+    .detalhes-rosa h2 {
+        font-size: 17px;
+    }
+
+    .detalhes-rosa p {
+        font-size: 14px;
+    }
+
+    .banner-comprar {
+        min-height: 400px;
+        padding: 40px 7%;
+    }
+
+    .conteudo-banner-comprar h1 {
+        font-size: 35px;
+    }
+
+    .conteudo-banner-comprar p {
+        font-size: 16px;
+    }
+
+    .cabecalho-compras h2 {
+        font-size: 27px;
+    }
+
+    .banner-florecer img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-navbar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .inicio {
+        min-height: 380px;
+        padding: 40px 7%;
+        background-position: center;
+    }
+
+    .conteudo-inicio h1 {
+        font-size: 30px;
+    }
+
+    .conteudo-inicio p {
+        font-size: 16px;
+    }
+
+    .titulo-banner {
+        min-height: 380px;
+        padding: 40px 7%;
+    }
+
+    .titulo-banner h1 {
+        font-size: 30px;
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        padding: 15px 8px;
+    }
+
+    .categoria {
+        width: 100%;
+        min-height: 100px;
+        padding: 8px 3px;
+    }
+
+    .categoria img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .categoria span {
+        font-size: 13px;
+    }
+
+    .sobre {
+        padding: 35px 7%;
+    }
+
+    .sobre h2 {
+        font-size: 25px;
+    }
+
+    .banner-comprar {
+        min-height: 380px;
+        padding: 35px 7%;
+    }
+
+    .conteudo-banner-comprar h1 {
+        font-size: 30px;
+    }
+
+    .botao-banner-comprar {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .lista-flores {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-florecer img {
+        width: 75%;
+    }
+}
+
+
+body > h1 {
+    display: table;
+    background-color: #ffb0d2;
+    color: #ffffff !important;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px auto;
+    text-align: center;
+}
+.informacoes-sobre {
+    background-image: url("imagens/fundocomprar.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+
+/* Página de pedido confirmado */
+
+.pedido-confirmado {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff5f8;
+    text-align: center;
+}
+
+.conteudo-pedido {
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 550px;
+    width: 100%;
+}
+
+.icone-sucesso {
+    background-color: #e8a0bf;
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin: 0 auto 20px;
+}
+
+.conteudo-pedido h1 {
+    color: #c45b88;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.conteudo-pedido p {
+    color: #555;
+    font-size: 17px;
+}
+
+.botao-voltar {
+    display: inline-block;
+    background-color: #e8a0bf;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: #c45b88;
+    color: white;
+}
+
+
+.conteudo-inicio {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.banner-florecer {
+    background-color: #ffffff;
+}
+
